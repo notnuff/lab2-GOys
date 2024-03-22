@@ -11,6 +11,7 @@ type ComputeHandler struct {
 	Output io.Writer
 }
 
+// Our handler
 func (ch *ComputeHandler) Compute() error {
 	postfixExp, err := readFromReader(ch.Input)
 	if err != nil {
